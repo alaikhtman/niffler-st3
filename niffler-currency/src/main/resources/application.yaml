@@ -48,7 +48,7 @@ spring:
     activate:
       on-profile: 'local'
   datasource:
-    url: 'jdbc:postgresql://localhost:5432/niffler-currency'
+    url: 'jdbc:postgresql://localhost:51194/niffler-currency'
   jpa:
     hibernate:
       ddl-auto: validate

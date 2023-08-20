@@ -44,7 +44,7 @@ spring:
     activate:
       on-profile: 'local'
   datasource:
-    url: 'jdbc:postgresql://localhost:5432/niffler-spend'
+    url: 'jdbc:postgresql://localhost:51194/niffler-spend'
   jpa:
     hibernate:
       ddl-auto: validate

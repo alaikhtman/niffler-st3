@@ -48,7 +48,7 @@ spring:
       group-id: 'userdata'
       auto-offset-reset: earliest
   datasource:
-    url: 'jdbc:postgresql://localhost:5432/niffler-userdata'
+    url: 'jdbc:postgresql://localhost:51194/niffler-userdata'
   jpa:
     hibernate:
       ddl-auto: validate

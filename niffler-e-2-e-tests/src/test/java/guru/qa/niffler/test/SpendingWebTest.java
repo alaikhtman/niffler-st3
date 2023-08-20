@@ -2,6 +2,7 @@ package guru.qa.niffler.test;
 
 import com.codeborne.selenide.Configuration;
 import com.codeborne.selenide.Selenide;
+import guru.qa.niffler.jupiter.Category;
 import guru.qa.niffler.jupiter.Spend;
 import guru.qa.niffler.jupiter.User;
 import guru.qa.niffler.model.CurrencyValues;
@@ -19,12 +20,13 @@ import static com.codeborne.selenide.Selectors.byText;
 import static com.codeborne.selenide.Selenide.$;
 import static guru.qa.niffler.jupiter.User.UserType.WITH_FRIENDS;
 
-@Disabled
+//@Disabled
 public class SpendingWebTest extends BaseWebTest {
 
     static {
         Configuration.browser = "chrome";
         Configuration.browserSize = "1980x1024";
+
     }
 
     private static final String user = "dima";
@@ -38,10 +40,16 @@ public class SpendingWebTest extends BaseWebTest {
         $("button[type='submit']").click();
     }
 
+
+    @Category(
+       category = "Macrome",
+       username =  user
+    )
+
     @Spend(
             username = user,
-            description = "Рыбалка на Ладоге",
-            category = "Рыбалка",
+            description = "Macrome на Ладоге",
+            category = "Macrome",
             amount = 14000.00,
             currency = CurrencyValues.RUB
     )
