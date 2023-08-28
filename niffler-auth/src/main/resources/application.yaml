@@ -53,7 +53,7 @@ spring:
     bootstrap-servers: 'localhost:9092'
 
   datasource:
-    url: 'jdbc:postgresql://localhost:5432/niffler-auth'
+    url: 'jdbc:postgresql://localhost:51194/niffler-auth'
   jpa:
     hibernate:
       ddl-auto: validate
